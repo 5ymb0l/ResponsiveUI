@@ -23,24 +23,34 @@ const NewCard = () => {
         />
       </div>
 
-      <div className="right row">
+      <div className="right row" style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column"
+      }}>
         <div>
-          <img src="../images/shopper.png" alt="" style={{}} />
+          <img src="../images/shopper.png" alt="" style={{
+            width : "156px",
+            height: "41px"
+          }} />
         </div>
         <div>
           <h3> Track order by</h3>
         </div>
-        <div>
+        <div className="radio group" style={{
+           
+        }}>
           <form action="">
             <div className="flexSB">
-              <div>
+             
                 <input type="radio" id="orderNo" name="track" value="orderNo" />
                 <label for="orderNo"> Order Number</label>
                 <input type="radio" id="mobileNO" name="track" value="mobileNO" />
                 <label for="mobileNO"> Mobile Number</label>
                 <input type="radio" id="awbNO" name="track" value="awbNO" />
                 <label for="awbNO"> AWB Number</label>
-              </div>
+             
             </div>
             <div>
             <input type="text" placeholder="Enter a Order" />
@@ -50,7 +60,14 @@ const NewCard = () => {
             </div>
             </form>
             <div>
-              <img src="../images/little.png" alt="" />
+              <img src="../images/little.png" alt="" style={{
+                height: "60px",
+                width: "468px",
+                left: "0px",
+                top: "339px",
+                borderRadius: "5px"
+                
+              }} />
             </div>
         </div>
       </div>
